@@ -1,0 +1,121 @@
+//-------------------------Command-------------------------------//
+Taurus HCV
+- Added breakingForce/Torque of 400
+- Decreased maxTemp from 3000 to 1400 with skinMaxTemp of 2400 (same as Mk1-2 pod)
+- stagingIcon changed from SOLID_BOOSTER to COMMAND_POD
+- Added/updated bulkheadProfiles
+- Added tags
+- Messed around with BahaSP's AnimatedEngine module (see notes down below about patches)
+- Disabled exhaustDamage on engines
+- EngineType is now SolidBooster and burns SolidFuel (not MonoPropellant)
+- Added usageReqMasks to CrewReport
+- Reduced ElectricCharge rate on reaction wheel from 1.0 to 0.96
+- Reduced MonoPropellant resource quantity from 150 to 100 (as it is no longer fuel for engines)
+- Added SolidFuel resource, quantity 150
+- Added ModuleDataTransmitter
+- Added ModuleProbeControlPoint (minimum crew of 2, no multihop)
+- Added ModuleLiftingSurface (aligns with CapsuleBottom)
+
+Omnibus Storage Container
+- entryCost increased from 12500 to 24800 (Hitchhiker is 12400)
+- cost increased from 5000 to 8000 (Hitchhiker is 4000)
+- Added breakingForce/Torque of 200
+- Decreased maxTemp from 2900 to 1000 with skinMaxTemp of 2000
+- Added tags
+- Added usageReqMasks to CrewReport
+
+Science Processing / Cargo Bay
+- entryCost increased from 15000 to 15600 (MPL is 10400)
+- cost increased from 5000 to 6000 (MPL is 4000)
+- Added breakingForce/Torque of 200
+- Decreased maxTemp from 2500 to 1000 with skinMaxTemp of 2200
+- Added tags
+- Removed deprecated "dataTransmissionBoost" from ModuleScienceLab
+- Added dataProcessingMultiplier of 0.5 (same as stock) to ModuleScienceConverter
+- Added renamed toggle action for ModuleScienceConverter to "Toggle Research" - no more "Toggle Converter"
+- Added KerbNetAccess (same as MPL)
+- Added ModuleExperienceManagement (same as MPL)
+- Reduced lookupRadius of cargobay from 3.0 to 2.7
+
+//-------------------------Coupling-------------------------------//
+Stack Separator
+- Increased entryCost from 1450 to 14500 (TR-XL is 9200)
+- Increased cost from 800 to 1450 (TR-XL is 900)
+- Changed category to Coupling
+- Added tags
+- Changed ejectionForce from 100 to 1200
+- Added ModuleToggleCrossfeed
+
+//-------------------------Electric-------------------------------//
+Battery SAS
+- Renamed to "R&S Z-8K Rechargeable Battery Reaction Wheel Module" (added "Rechargeable")
+- Mass decreased from 1.0 to 0.8
+- Tweaked drag slightly
+- Increased crashTolerance from 6 to 9
+- Added breakingForce/Torque of 200
+- Decreased maxTemp from 2900 to 2000
+- Added tags
+- Added torqueResponseSpeed to Reaction Wheel
+- Increased ElectricCharge rate of reaction wheel from 0.8 to 1.0
+
+//-------------------------Engines-------------------------------//
+Quadroodle LFE
+- Increased entryCost from 15500 to 18500 (compare to Rhino's 68000)
+- Increased cost from 4499 to 6499  (no longer 4 Poodles, compare to Rhino's 25000 and it's still too cheap)
+- Changed category to Engine (no in game effect)
+- Tweaked title slightly
+- Reduced crashTolerance from 12 to 7
+- Added breakingForce/Torque of 200
+- Reduced maxTemp from 2700 to 2000
+- Added heatConductivity of 0.06 (half default)
+- Added tags
+- Added EngineType
+- Removed ElectricCharge resource of 0 quantity
+
+Tiny Atomic Motor
+- Increased cost from 15450 to 30900 (compared to NERV's 10000)
+- Reduced crashTolerance from 20 to 12
+- Added breakingForce/Torque of 200
+- Reduced maxTemp from 3000 to 2500
+- Added heatConductivity of 0.06 (half default)
+- Added tags
+- Removed ElectricCharge resource of 0 quantity
+
+//-------------------------Tanks-------------------------------//
+S3-1800 LFT
+- Made it surface attachable
+- Reduced entryCost from 9999 to 9400
+- Changed category to FuelTank (no in game effect)
+- Reduced maxTemp from 2900 to 2000
+- Updated bulkheadProfiles
+- Added tags
+
+Very Large Holding Tank
+- Reduced crashTolerance from 15 to 7
+- Reduced maxTemp from 2500 to 2000
+- Added/updated bulkheadProfiles
+- Added tags
+
+//-------------------------Thermal-------------------------------//
+Heat Shield
+- Tweaked title slightly
+- Changed category to Thermal
+- Added breakingForce/Torque of 200
+- Increased maxTemp from 3000 to 3300
+- Added PhysicsSignificance = 0
+- Added tags
+- Added staging/decoupling/jettisoning modules and such
+- lossExp changed from -6000 to -7500
+- lossConst changed from 1 to 0.1
+- pyrolysisLossFactor changed from 600 to 6000
+- Added Char
+- Added ModuleLiftingSurface (aligns CapsuleBottom)
+
+//-------------------------Extras-------------------------------//
+TweakScale
+- Added TweakScale patch. Engines and Crewed parts disabled by default
+
+BahaSP/DeployableEngines/Landertron
+- Added patch that switches between "AnimatedEngine" if BDAnimationModules is present
+or "ModuleDeployableEngine" if DeployableEngines is present
+- Patch also converts Taurus HCV engines to Landertron Engines if Landertron mod is installed
