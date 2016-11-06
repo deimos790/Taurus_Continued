@@ -1,8 +1,9 @@
-Agents.cfg
+Check Agents.cfg
 
 FOV on IVA's
 
-See the HCV Engines as more LES engines or Descent engines?
+DDS textures
 
+Update Issue Tracker with known issues
 
-Patch to restore MonoPropellant Engines
+Update Credits

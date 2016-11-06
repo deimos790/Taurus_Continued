@@ -1,0 +1,4 @@
+These patches were compiled by Deimos Rast, but represent a community effort.
+Special thanks goes out to all who have provided feedback and patches, specifically:
+- PocketBrotector
+- Kerbas-ad-astra

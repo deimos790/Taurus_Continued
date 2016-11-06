@@ -1,3 +1,21 @@
+===================================================================================
+v0.2
+===================================================================================
+- Renamed patch "HCV_Engines.cfg" to "HCV_AnimatedEngines.cfg" and tweaked it slightly. Added licensing bit as well.
+- Added patch to restore Taurus HCV engine to MonoPropellant propellant, and restore reduced MonoPropellant resource. Patch disabled by default.
+- Added patch to allow Taurus HCV engine to be throttled. Patch disabled by default.
+- Added patch to allow Taurus HCV engine to be shut down. Patch disabled by default.
+- Added patch to turn Taurus HCV engine into an orbital engine. Patch disabled by default.
+- Rearranged Extras folder - please delete your old version to avoid duplicates.
+- Added CargoBayFix patch to address concave collider issues.
+- Added Credits file.
+- S3-1800 Tank mass increased from 1.15 to 1.125 (thanks PocketBrotector)
+- Battery SAS mass reduced from 0.8 to 0.733 (thanks PocketBrotector)
+- Added "noAutoEVAMulti" to the Omnibus & Science Lab in an attempt to prevent *accidental* EVA's, as it's difficult to reenter.
+
+===================================================================================
+v0.1
+===================================================================================
 //-------------------------Command-------------------------------//
 Taurus HCV
 - Added breakingForce/Torque of 400
