@@ -10,11 +10,13 @@
   		@name = MonoPropellant
   	}
   }
+
   @RESOURCE[MonoPropellant]
   {
     @amount = 150 // 100
     @maxAmount = 150 // 100
   }
+  
   !RESOURCE[SolidFuel]{}
 
 }

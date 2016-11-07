@@ -1,5 +1,19 @@
 ===================================================================================
-v0.2
+v0.1.3 (upcoming)
+===================================================================================
+- DDS textures (if I remember, seriously)
+
+===================================================================================
+v0.1.2
+===================================================================================
+- Added CTT patch (thanks Kerbas-ad-astra)
+- Removed CargoBayFix patch (integrated directly in Science.cfg)
+- Renamed some things
+- Added MonoPropFX patch (disabled by default) for the HCV engines
+- Added patch to fix ModuleDeployableEngine not recognizing HCV engine animation
+
+===================================================================================
+v0.1.1
 ===================================================================================
 - Renamed patch "HCV_Engines.cfg" to "HCV_AnimatedEngines.cfg" and tweaked it slightly. Added licensing bit as well.
 - Added patch to restore Taurus HCV engine to MonoPropellant propellant, and restore reduced MonoPropellant resource. Patch disabled by default.

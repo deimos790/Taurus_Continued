@@ -1,9 +1,0 @@
-Check Agents.cfg
-
-FOV on IVA's
-
-DDS textures
-
-Update Issue Tracker with known issues
-
-Update Credits
